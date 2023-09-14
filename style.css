@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Nunito';
+}
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Nunito';
+
+}
+
+ul {
+    gap: 30px;
+}
+
+li {
+    font-size: 17px;
+
+    font-weight: 500;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.btn-icon:hover {
+    opacity: 0.7;
+    /* Reduce opacity on hover */
+    transition: opacity 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.custom-footer-bg {
+    background-color: #FAF1FF;
+}
+
+.map-section {
+    display: none;
+    width: 100%;
+    height: 400px;
+    background-color: #f2f2f2;
+    /* Add more styles as needed for the map section */
+}
+
+.show-map .map-section {
+    display: block;
+}
+
+.mb-42 {
+    margin-bottom: 42px;
+}
+
+p {
+    color: #575757;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+h4 {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+.h6-custom {
+    color: #333;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.our-services-section .card {
+    /* flex-direction: column; */
+
+    /* gap: 10px; */
+    border-radius: 14px;
+    /* border: 1px solid #B133FF; */
+    background: #fff;
+    box-shadow: 0px 1px 30px 0px rgba(124, 124, 124, 0.15);
+    cursor: pointer;
+    padding: 30px 30px 30px 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+
+
+}
+
+.our-services-section .card:hover {
+    background-color: #FAF1FF;
+    box-shadow: 0px 4px 20px 0px rgba(177, 51, 255, 0.20);
+}
+
+.our-services-section {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+.line-height-custom {
+    line-height: 25px;
+    /* Adjust the value as needed */
+}
+
+.swiper-custom {
+    border: 1px solid #B7B7B7;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.swiper-custom:hover {
+    border-color: darkgray;
+}
+
+
+
+.service-py {
+    padding-bottom: 50px;
+
+}
+
+.footerul {
+    line-height: 32px;
+}
+
+.fs-11 {
+    font-size: 11px;
+}
+
+.py-100 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.secondary {
+    background: linear-gradient(118deg, #D7EBFF 0%, #EDF6FF 100%) !important;
+    color: #006CD2 !important;
+
+}
+
+
+
+.carousel-para {
+    margin-bottom: 40px;
+   
+}
+
+.powered-heading {
+    margin-top: 32px;
+    margin-bottom: 30px;
+}
+
+
+
+.py-top {
+    padding-top: 150px;
+}
+
+.btn-custom2 {
+    padding: 8px 20px !important;
+
+}
+
+.footer-heading {
+    margin-bottom: 30px;
+}
+
+.footer-section {
+
+    margin-top: 100px;
+    margin-bottom: 35px;
+}
+
+
+.fs-28 {
+    font-size: 28px;
+
+}
+
+.position-absolute {
+    position: absolute;
+
+}
+
+
+
+.primary {
+    border-radius: 30px;
+    background: #006CD2;
+    padding: 12px 30px;
+
+}
+
+
+.btn {
+    padding: 12px 30px;
+
+    font-size: 16px;
+    border-radius: 30px !important;
+
+
+    transition: all .4s ease-in-out;
+    border: 2px solid var(--text-gray);
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+.features-icon {
+    padding: 16px;
+    background-color: #F6E4FF;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #006CD2;
+    font-size: 50px;
+}
+
+h2 {
+    color: text, #333;
+    font-size: 38px;
+    font-weight: 700;
+}
+
+h3 {
+    color: #006CD2;
+    font-size: 26px;
+    font-weight: 600;
+
+}
+
+h5 {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.green {
+    color: #65B61A;
+
+}
+
+.py-70 {
+    padding-top: 70px;
+}
+
+.logo-wrapper {
+    width: 240px;
+    background-color: #fafafa;
+    border-radius: 14px;
+
+
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.card-body {
+    padding: 30px;
+    height: 100%;
+}
+
+.custom-hr {
+    border: none;
+    height: 2px;
+    /* Adjust the height as needed */
+    background-color: #333;
+    /* Change this color to your preferred color */
+    margin: 20px 0;
+    /* Adjust margin as needed */
+}
+
+.custom-image {
+    width: 100%;
+    object-fit: contain;
+    transition: transform 0.3s;
+    /* Add a smooth transition effect */
+}
+
+.custom-image:hover {
+    transform: scale(1.2);
+    /* Increase the scale on hover */
+}
+
+.btn-border {
+    border-right: 2px solid #C9C9C9;
+    margin-right: 18px;
+    padding-right: 18px;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.btn:hover {
+    scale: 1;
+}
+
+.slick-carousel {
+    /* overflow: hidden; */
+}
+
+
+
+
+
+
+.serviceSection {
+    text-align: center;
+}
+
+
+.secContainer {
+    display: inline-block;
+
+}
+
+
+
+
+#btn1 {
+    border-radius: 500px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.12);
+    display: flex;
+    padding: 12px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.custom-padding {
+    padding: 30px, 30px, 50px, 30px;
+}
+
+.orange {
+    color: orange;
+}
+
+.text-white {
+    /* color: black !important; */
+    text-decoration: none;
+}
+
+.margin {
+    margin-left: auto;
+    gap: 10px;
+}
+
+
+
+
+
+.slick-slide {
+    margin-right: 18px;
+    height: auto;
+    display: flex;
+    align-items: stretch;
+}
+
+.slick-slide .card {
+    flex: 1;
+    /* margin: 0 10px; */
+}
+
+
+
+.slick-list {
+    margin-right: -18px;
+    /* Counteract the margin on the last slide */
+}
+
+.carousel {
+    margin: 20px auto;
+}
+
+.carousel img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.image-container {
+    margin: 20px 0;
+}
+
+.border {
+    border-radius: 12px 12px 0px 0px;
+}
+
+.img-custom {
+    width: 100%;
+}
+
+
+
+
+/* Media query for medium screens */
+
+
+
+/* Overall container styling */
+.wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Slider container styling */
+.slider {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    /* 16:9 aspect ratio, adjust as needed */
+    overflow: hidden;
+}
+
+/* Slide styling */
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100% !important;
+}
+
+/* Show the checked slide */
+input[type="radio"]:checked+.slide {
+    display: flex;
+}
+
+/* Thumbnail grid */
+.gridGap {
+    grid-gap: 10px;
+}
+
+/* Thumbnail image styling */
+.img-custom {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.custom-border {
+    border: 7px solid #B133FF;
+}
+
+/* Aspect ratio container for video thumbnail */
+.aspect-ratio-container {
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    /* 16:9 aspect ratio (adjust as needed) */
+}
+
+/* Video thumbnail image */
+.aspect-ratio-container img {
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+}
+
+/* Video styling */
+video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    /* Rounded corners for the video */
+}
+
+/* Play button position */
+.play {
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+}
+
+/* Hide radio buttons */
+input[type="radio"] {
+    display: none;
+}
+
+/* Center-align the thumbnail images and play buttons */
+.video-thumbnail {
+    position: relative;
+    /* Change from absolute to relative */
+    width: 100%;
+    /* 16:9 aspect ratio (adjust as needed) */
+}
+
+/* Center-align the thumbnail image */
+.aspect-ratio-container img {
+    /* position: absolute; */
+    top: 0;
+    /* Center vertically */
+    left: 0;
+    /* Center horizontally */
+    /* Center the image */
+}
+
+
+
+/* Center-align the play button */
+.play-button {
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    /* Center the button */
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Play button hover effect */
+.play-button:hover {
+    opacity: 1;
+}
+
+/* Video thumbnail image styling */
+.videoImage {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+/* Style for the previous and next buttons */
+.slick-prev,
+.slick-next {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    /* Ensure buttons are above the slides */
+    width: 30px;
+    /* Adjust the button width as needed */
+    height: 30px;
+    /* Adjust the button height as needed */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Background color of the buttons */
+    border-radius: 50%;
+    /* Make the buttons circular */
+
+}
+
+/* Define the dimensions and styles for the slider and slides */
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    /* Center the slider */
+}
+
+.slider {
+    display: flex;
+    transition: left 0.3s ease;
+    
+}
+
+.slide {
+    flex: 0 0 100%;
+   
+}
+
+
+.slick-arrow.previous {
+    left: 0%;
+    transform: translate(-50%, -50%);
+
+
+}
+.slick-arrow.next {
+
+    right: 0;
+    transform: translate(50%, -50%);
+
+  
+
+}
+
+.slick-arrow{
+    position: absolute;
+    color: #B133FF;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    line-height: 40px;
+    background: white;
+    cursor: pointer;
+    width: 56px;
+    height: 56px;
+    z-index: 1;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+}
+
+
+.slick-dots{
+    position: static;
+    margin-top: 80px;
+}
+.slick-dots li button{
+background-color: #F6E4FF;
+width: 13px;
+height: 13px;
+border-radius: 50px;
+}
+
+.slick-dots li.slick-active button{
+    background-color: #B133FF;
+}
+
+.slick-dots li button::before{
+    content: none;
+
+}
+
+.slick-disabled{
+    opacity: 0;
+}
+
+.slick-track{
+    display: flex;
+}
+
+@media (max-width: 1025px) {
+
+    .logo-wrapper {
+        max-width: 156px !important;
+        gap: 1rem !important;
+    }
+
+    .wrap {
+        display: block !important;
+    }
+
+    .gridGap {
+        display: flex !important;
+        margin-top: 10px;
+        grid-gap: 5px;
+    }
+
+    h2 {
+        font-size: 30px;
+
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .py-100 {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    .fs-28 {
+        font-size: 24px;
+    }
+
+    .card-body {
+        padding: 20px 20px 20px 20px;
+        height: 100%;
+    }
+
+    .carousel-button {
+        display: none !important;
+      }
+      .carousel-para {
+        margin-bottom: 30px;
+       
+    }
+    
+.slick-dots{
+    margin-top: 60px;
+}
+    
+}
+
+@media(max-width: 576px) {
+    .image-container {
+        flex-basis: 100%;
+    }
+
+    .logo-wrapper {
+        display: grid !important;
+        max-width: 150px !important;
+        width: 100%;
+
+    }
+
+    .our-partner {
+        grid-template-columns: 1fr 1fr !important;
+        justify-items: center !important;
+
+    }
+
+    .btn {
+        margin-top: 0.4rem;
+    }
+
+    .gridGap {
+        margin-top: 1rem;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 22px;
+        margin-top: 1rem;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .mt-4 {
+        display: flex;
+
+    }
+
+
+
+    .align {
+        text-align: center;
+    }
+
+
+
+    .imageSection {
+        text-align: center;
+    }
+
+    .wrap {
+        display: block !important;
+    }
+
+    .gridGap {
+        display: flex !important;
+        grid-gap: 5px;
+    }
+
+    .footer-button {
+        display: block;
+        text-align: center;
+    }
+
+    .py-100 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer-btn {
+        display: inline-block !important;
+        text-align: center;
+    }
+
+    .fs-28 {
+        font-size: 21px;
+    }
+
+    .card-body {
+        padding: 15px;
+        height: 100%;
+    }
+    .carousel-para {
+        margin-bottom: 15px;
+       
+    }
+    .slick-dots{
+        margin-top: 50px;
+    }
+
+   
+}

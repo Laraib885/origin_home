@@ -1,11 +1,833 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+  <!-- Your custom CSS if needed -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Your custom CSS if needed -->
 </head>
+
 <body>
+  <!-- Navigation -->
+
+
+  <nav class="navbar py-4 navbar-expand-lg navbar-light gap-0 gap-lg-5 bg-transparent">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img style="max-width: 100%;" src="./Images/Mask group.png" alt="Logo" width="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mt-3 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Partners</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+          </li>
+        </ul>
+        <div class="d-lg-flex d-sm-block margin">
+
+
+          <div class="btn-group">
+            <button id="btn1"
+              class="btn align-items-center border-0 bg-white dropdown-toggle show d-inline-flex gap-2 mr-lg-3 dropdown-toggle"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <a href="#" class="btn-icon">
+                <img class="btn-border" src="./Images/earth.png" />
+                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                  <path
+                    d="M11.9169 0.814058C11.7588 0.655956 11.5716 0.576904 11.3553 0.576904C11.139 0.576904 10.9521 0.655956 10.7944 0.814058L6.16196 5.44647L1.51374 0.798248C1.36617 0.650686 1.18172 0.576904 0.960377 0.576904C0.739033 0.576904 0.54931 0.655956 0.391207 0.814058C0.233104 0.972161 0.154053 1.15935 0.154053 1.37564C0.154053 1.59192 0.233104 1.77891 0.391207 1.93659L5.71927 7.24884C5.78251 7.31208 5.85102 7.35698 5.9248 7.38354C5.99858 7.41011 6.07764 7.42318 6.16196 7.42275C6.24628 7.42275 6.32533 7.40947 6.39911 7.38291C6.47289 7.35635 6.5414 7.31166 6.60465 7.24884L11.9327 1.92078C12.0803 1.77321 12.1541 1.59129 12.1541 1.37501C12.1541 1.15872 12.075 0.97174 11.9169 0.814058Z"
+                    fill="#006CD2" />
+                </svg>
+              </a>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#" data-lang="fr"><img src="path-to-french-flag.png"
+                    alt="">Français</a></li>
+              <li><a class="dropdown-item" href="#" data-lang="en"><img src="path-to-english-flag.png"
+                    alt="">English</a></li>
+            </ul>
+          </div>
+
+
+
+          <button class="btn btn-primary d-inline-flex gap-2 align-items-center">
+            Contact Us
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+              <path
+                d="M0.391207 11.7628C0.233104 11.6047 0.154053 11.4175 0.154053 11.2013C0.154053 10.985 0.233104 10.798 0.391207 10.6403L5.02362 6.00791L0.375397 1.35968C0.227834 1.21212 0.154053 1.02767 0.154053 0.806324C0.154053 0.58498 0.233104 0.395257 0.391207 0.237154C0.54931 0.0790514 0.736503 0 0.952788 0C1.16907 0 1.35606 0.0790514 1.51374 0.237154L6.82599 5.56522C6.88923 5.62846 6.93413 5.69697 6.96069 5.77075C6.98725 5.84453 7.00032 5.92358 6.9999 6.00791C6.9999 6.09223 6.98662 6.17128 6.96006 6.24506C6.9335 6.31884 6.88881 6.38735 6.82599 6.45059L1.49793 11.7787C1.35036 11.9262 1.16844 12 0.952155 12C0.735871 12 0.548888 11.9209 0.391207 11.7628Z"
+                fill="white" />
+            </svg>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <!-- Section 1 -->
+  <div class="container py-top">
+    <div class="row align-items-center">
+      <div class="col-lg-5 ">
+
+        <h1>Welcome to our Data and AI Services.</h1>
+        <p class="mb-lg-5 mb-4 mt-4">
+          We are dedicated to providing innovative solutions to help
+          businesses and organizations leverage the power of data and
+          artificial intelligence to achieve their goals.
+        </p>
+        <div class="d-lg-flex gap-2 d-sm-block mt-lg-4 mt-sm-0">
+          <button class="btn btn-primary d-inline-flex align-items-center gap-2">
+            Learn more
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+              <path
+                d="M0.391207 11.7628C0.233104 11.6047 0.154053 11.4175 0.154053 11.2013C0.154053 10.985 0.233104 10.798 0.391207 10.6403L5.02362 6.00791L0.375397 1.35968C0.227834 1.21212 0.154053 1.02767 0.154053 0.806324C0.154053 0.58498 0.233104 0.395257 0.391207 0.237154C0.54931 0.0790514 0.736503 0 0.952788 0C1.16907 0 1.35606 0.0790514 1.51374 0.237154L6.82599 5.56522C6.88923 5.62846 6.93413 5.69697 6.96069 5.77075C6.98725 5.84453 7.00032 5.92358 6.9999 6.00791C6.9999 6.09223 6.98662 6.17128 6.96006 6.24506C6.9335 6.31884 6.88881 6.38735 6.82599 6.45059L1.49793 11.7787C1.35036 11.9262 1.16844 12 0.952155 12C0.735871 12 0.548888 11.9209 0.391207 11.7628Z"
+                fill="white" />
+            </svg>
+          </button>
+          <button class="btn secondary d-inline-flex align-items-center gap-2
+           ">
+            Watch video
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+              <path
+                d="M7.84595 0.169678C3.97995 0.169678 0.845947 3.30368 0.845947 7.16968C0.845947 11.0357 3.97995 14.1697 7.84595 14.1697C11.7119 14.1697 14.8459 11.0357 14.8459 7.16968C14.8459 3.30368 11.7119 0.169678 7.84595 0.169678ZM5.93333 10.2143V4.12509L11.2067 7.16968L5.93333 10.2143Z"
+                fill="#006CD2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <!-- You can add content here -->
+      </div>
+    </div>
+  </div>
+
+  <!--Our services-->
+  <section class="position-relative">
+    <div class="container py-100">
+      <img src="./Images/background-image.svg" class="position-absolute start-0 top-0 z-n1 squares" alt="">
+
+      <div class="row g-4">
+
+        <div class="col-12 col-lg-6 mx-auto text-center">
+          <h2 class="mb-4">Our Services</h2>
+          <p class="mb-80">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters,
+          </p>
+        </div>
+
+        <div class="our-services-section row mt-5 row-cols-1 mt-4 row-cols-md-2 row-cols-lg-2 row-cols-xl-4">
+          <div class="col-lg-6 col-md-6 col-12 mb-4">
+            <div class="card ">
+              <div class="features-icon d-inline-flex justify-content-center align-items-center">
+                <img src="./Images/Pic1.png" alt="Image 1" />
+              </div>
+              <h6 class="h6-custom">Data Analytics</h6>
+
+              <p>
+                We help businesses make sense of their data through advanced analytics
+                techniques such as data mining, predictive modeling, and machine learning. Our experts work with
+                clients to understand their business needs and design custom analytics solutions that drive results.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12 mb-4">
+            <div class="card">
+
+              <div class="features-icon d-inline-flex justify-content-center align-items-center">
+                <img src="./Images/Pic2.png" alt="Image 1" />
+              </div>
+              <h6 class="h6-custom">AI Consulting</h6>
+              <p>
+                We help businesses make sense of their data through advanced analytics
+                techniques such as data mining, predictive modeling, and machine learning. Our experts work with
+                clients to understand their business needs and design custom analytics solutions that drive results.
+              </p>
+            </div>
+          </div>
+
+
+          <div class="col-lg-6 col-md-6 col-12 mb-4">
+            <div class="card">
+
+              <div class="features-icon d-inline-flex justify-content-center align-items-center">
+                <img src="./Images/Pic4.png" alt="Image 1" />
+              </div>
+              <h6 class="h6-custom">Cloud Computing</h6>
+              <p> We help businesses make sense of their data through advanced analytics
+                techniques such as data mining, predictive modeling, and machine learning. Our experts work with
+                clients to understand their business needs and design custom analytics solutions that drive results.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12 mb-4">
+            <div class="card ">
+
+              <div class="features-icon d-inline-flex justify-content-center align-items-center">
+                <img src="./Images/Pic4.png" alt="Image 1" />
+              </div>
+              <h6 class="h6-custom">Big Data Solutions</h6>
+              <p> We help businesses make sense of their data through advanced analytics
+                techniques such as data mining, predictive modeling, and machine learning. Our experts work with
+                clients to understand their business needs and design custom analytics solutions that drive results.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <!--Section 1-->
+  <div class="container py-100">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <div class="imageSection">
+          <img src="./Images/sectionImage.png" alt="Image description" />
+        </div>
+      </div>
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="mb-4 mt-4 mt-lg-0">We create astounding products powered by data science and AI.</h2>
+        <p class="mb-42">
+          It is a long established fact that a reader will be distracted by
+          the readable content of a page when looking at its layout. The point
+          of using Lorem Ipsum is that it has a more-or-less normal
+          distribution of letters,
+        </p>
+        <div>
+          <button class="btn d-inline-flex align-items-center gap-2 btn-primary py-2">
+            Contact us
+            <svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" fill="none">
+              <path
+                d="M0.391207 11.7628C0.233104 11.6047 0.154053 11.4175 0.154053 11.2013C0.154053 10.985 0.233104 10.798 0.391207 10.6403L5.02362 6.00791L0.375397 1.35968C0.227834 1.21212 0.154053 1.02767 0.154053 0.806324C0.154053 0.58498 0.233104 0.395257 0.391207 0.237154C0.54931 0.0790514 0.736503 0 0.952788 0C1.16907 0 1.35606 0.0790514 1.51374 0.237154L6.82599 5.56522C6.88923 5.62846 6.93413 5.69697 6.96069 5.77075C6.98725 5.84453 7.00032 5.92358 6.9999 6.00791C6.9999 6.09223 6.98662 6.17128 6.96006 6.24506C6.9335 6.31884 6.88881 6.38735 6.82599 6.45059L1.49793 11.7787C1.35036 11.9262 1.16844 12 0.952155 12C0.735871 12 0.548888 11.9209 0.391207 11.7628Z"
+                fill="white" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="container py-100">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h2>Impact of Data and AI</h2>
+        <div>
+          <p class="mt-4 pe-5">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout.
+            <br/><br/>
+            The point of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters,
+          </p>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="d-flex flex-column flex-lg-row gap-4 align-items-center">
+          <div class="slider">
+            <input id="slide-1-trigger" type="radio" name="slides" checked>
+
+            <section class="slide slide-one">
+              <div class="video-thumbnail aspect-ratio-container">
+                  <img src="./Images/one.png" class="videoImage" alt="Video Thumbnail">
+                  <button class="play-button bg-transparent" onclick="startVideo('video1')">
+                      <img class="play" src="./Images/playButton.png" alt="">
+                  </button>
+              </div>
+              <iframe
+                  id="video1"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/-DzowlcaUmE?si=xmuibZzc5c-NDB04"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  style="display:none;"
+              ></iframe>
+          </section>
+            <!-- Repeat for other slides as well -->
+            <input id="slide-2-trigger" type="radio" name="slides">
+
+            <section class="slide slide-one">
+              <div class="video-thumbnail aspect-ratio-container">
+                  <img src="./Images/fourr.jpg" class="videoImage" alt="Video Thumbnail">
+                  <button class="play-button bg-transparent" onclick="startVideo('video2', this)">
+                      <img class="play" src="./Images/playButton.png" alt="">
+                  </button>
+              </div>
+              <iframe
+                  id="video2"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/0lFLu1uapx4?si=ql-UnX5ZEc5U4YZn"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  style="display:none;"
+              ></iframe>
+          </section>
+
+
+            <input id="slide-3-trigger" type="radio" name="slides">
+            
+            <section class="slide slide-one">
+              <div class="video-thumbnail aspect-ratio-container">
+                  <img src="./Images/threee.jpg" class="videoImage" alt="Video Thumbnail">
+                  <button class="play-button bg-transparent" onclick="startVideo('video3')">
+                      <img class="play" src="./Images/playButton.png" alt="">
+                  </button>
+              </div>
+              <iframe
+                  id="video3"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/uaWYRL0g1iw?si=AuBN0khZhDT_-7m0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  style="display:none;"
+
+              ></iframe>
+          </section>
+
+
+            <input id="slide-4-trigger" type="radio" name="slides">
+
+            <section class="slide slide-one">
+    <div class="video-thumbnail aspect-ratio-container">
+        <img src="./Images/fourr.jpg" class="videoImage" alt="Video Thumbnail">
+        <button class="play-button bg-transparent" onclick="startVideo('video4', this)">
+            <img class="play" src="./Images/playButton.png" alt="">
+        </button>
+    </div>
+    <iframe
+        id="video4"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/uaWYRL0g1iw?si=AuBN0khZhDT_-7m0"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+        style="display:none;"
+    ></iframe>
+</section>
+          </div>
+
+
+          <div class="d-flex flex-row flex-lg-column gap-2" style="grid-template-columns: 1fr 1fr 1fr 1fr;">
+            <div>
+              <label for="slide-1-trigger"><img class="w-100" src="./Images/four.png" alt=""></label>
+            </div>
+            <div>
+              <label for="slide-2-trigger"><img class="w-100" src="./Images/two.png" alt=""></label>
+            </div>
+            <div>
+              <label for="slide-3-trigger"><img class="w-100" src="./Images/three.png" alt=""></label>
+
+            </div>
+            <div>
+              <label for="slide-4-trigger"><img class="w-100" src="./Images/four.png" alt=""></label>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Section 3-->
+
+
+  <div class="container py-100">
+    <div class="row position-relative blog-section">
+      <div class="col-12">
+        <div class="slick-carousel">
+
+          <div class="slick-slide align-items-stretch">
+            <div class="card rounded-4 w-100 h-100">
+              <img src="./Images/Rectangle1.jpg" alt="Image 1" class="w-100">
+              <div class="card-body">
+                <h6>Jun 23, 2023 .<span class="orange"> WHATSAPP</span></h6>
+                <h3 class="fs-28 my-lg-4 my-mb-3 my-2">How 3D printing is helping athletes up their game</h3>
+                <p class="carousel-para">Greater performance, customization, and comfort.</p>
+                <a>Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                    <path
+                      d="M6 6.00001C6 6.18865 5.92797 6.37727 5.78422 6.5211L1.25832 11.047C0.970413 11.3349 0.503627 11.3349 0.21584 11.047C-0.0719468 10.7592 -0.0719468 10.2925 0.21584 10.0045L4.22061 6.00001L0.21598 1.99545C-0.0718069 1.70755 -0.0718069 1.2409 0.21598 0.953137C0.503767 0.665094 0.970553 0.665094 1.25846 0.953137L5.78436 5.47892C5.92814 5.62282 6 5.81144 6 6.00001Z"
+                      fill="#575757" />
+                  </svg></a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="slick-slide align-items-stretch">
+            <div class="card rounded-4  w-100 h-100 ">
+              <img src="./Images/Rectangle2.jpg" alt="Image 1" class="w-100">
+  
+              <div class="card-body">
+  
+                <h6>Jun 23, 2023 .<span class="orange"> WHATSAPP</span></h6>
+                <h3 class="fs-28 my-lg-4 my-mb-3 my-2">How 3D printing is helping athletes up their game</h3>
+                <p class="carousel-para">Greater performance, customization, and comfort.</p>
+                <a>Read More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                    <path
+                      d="M6 6.00001C6 6.18865 5.92797 6.37727 5.78422 6.5211L1.25832 11.047C0.970413 11.3349 0.503627 11.3349 0.21584 11.047C-0.0719468 10.7592 -0.0719468 10.2925 0.21584 10.0045L4.22061 6.00001L0.21598 1.99545C-0.0718069 1.70755 -0.0718069 1.2409 0.21598 0.953137C0.503767 0.665094 0.970553 0.665094 1.25846 0.953137L5.78436 5.47892C5.92814 5.62282 6 5.81144 6 6.00001Z"
+                      fill="#575757" />
+                  </svg></a>
+              </div>
+            </div>
+          </div>
+
+         
+
+          <div class="slick-slide align-items-stretch">
+            <div class="card rounded-4 w-100 h-100">
+            <img src="./Images/Rectangle3.jpg" alt="Image 3" class="w-100">
+            <div class="card-body">
+
+              <h6 class="fs-15">Feb 28, 2023 .<span class="green">CONVERSATIONAL COMMERCE</span></h6>
+              <h3 class="fs-28 my-lg-4 my-mb-3 my-2">How 3D printing is helping athletes up their game</h3>
+              <p class="carousel-para">Greater performance, customization, and comfort.</p>
+              <a>Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                  <path
+                    d="M6 6.00001C6 6.18865 5.92797 6.37727 5.78422 6.5211L1.25832 11.047C0.970413 11.3349 0.503627 11.3349 0.21584 11.047C-0.0719468 10.7592 -0.0719468 10.2925 0.21584 10.0045L4.22061 6.00001L0.21598 1.99545C-0.0718069 1.70755 -0.0718069 1.2409 0.21598 0.953137C0.503767 0.665094 0.970553 0.665094 1.25846 0.953137L5.78436 5.47892C5.92814 5.62282 6 5.81144 6 6.00001Z"
+                    fill="#575757" />
+                </svg></a>
+            </div>
+          </div>
+
+          </div>
+
+          <div class="slick-slide align-items-stretch">
+            <div class="card rounded-4  w-100 h-100">
+            <img src="./Images/Rectangle3.jpg" alt="Image 3" class="w-100">
+            <div class="card-body">
+
+              <h6 class="fs-15">Feb 28, 2023 .<span class="green">CONVERSATIONAL COMMERCE</span></h6>
+              <h3 class="fs-28 my-lg-4 my-mb-3 my-2">How 3D printing is helping athletes up their game</h3>
+              <p class="carousel-para">Greater performance, customization, and comfort.</p>
+              <a>Read More
+                <svg xmlns="http://www.w3.org/2000/svg" width="6" height="12" viewBox="0 0 6 12" fill="none">
+                  <path
+                    d="M6 6.00001C6 6.18865 5.92797 6.37727 5.78422 6.5211L1.25832 11.047C0.970413 11.3349 0.503627 11.3349 0.21584 11.047C-0.0719468 10.7592 -0.0719468 10.2925 0.21584 10.0045L4.22061 6.00001L0.21598 1.99545C-0.0718069 1.70755 -0.0718069 1.2409 0.21598 0.953137C0.503767 0.665094 0.970553 0.665094 1.25846 0.953137L5.78436 5.47892C5.92814 5.62282 6 5.81144 6 6.00001Z"
+                    fill="#575757" />
+                </svg></a>
+            </div>
+          </div>
+
+          </div>
+          
+          <!-- Add more slides as needed -->
+        </div>
+     
+        
+      </div>
+    </div>
+
+  </div>
+
+
+ 
+
+
+  <!--Our Partner-->
+  <div class="container py-100 border-top">
+    <div class="col-12">
+      <h2 class="text-center mb-80 ">Our Partners</h2>
+      <div class="row position-relative">
+
+        <div class="d-grid d-sm-flex our-partner justify-content-center gap-4 flex-wrap">
+          <div
+            class="logo-wrapper responsive d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/1.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/2.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/3.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="/Images/3.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images//4.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/5.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/6.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/7.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/8.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/9.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/10.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/11.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/12.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/13.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/14.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/15.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/17.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/18.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/19.png" alt="Image">
+          </div>
+
+          <div
+            class="logo-wrapper d-flex justify-content-center align-items-center col-12 col-sm-6 col-md-4 col-lg-3 p-3">
+            <img src="./Images/20.png" alt="Image">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  
+
+
+  <!--Section 4-->
+  <div class="container py-100 border-top">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="./Images/Objects.png" alt="Image description" />
+      </div>
+      <div class="col-lg-6 mt-sm-3 mt-lg-0">
+        <h2 style="color: #006CD2;">Data Science and AI</h2>
+        <p class="col-lg-10 mt-4 mb-lg-5 mb-4">
+          We build data pipelines and accelerate business process. Unlock rich audience insights that will help
+          you
+          react to any business changes as quickly as possible.
+        </p>
+        <div class="mt-5">
+          <button class="btn btn-primary btn-custom2">
+            Learn More
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+ 
+
+
+
+  <!--Our origin-->
+
+
+  <div class="container py-100 border-top">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <img src="./Images/Mask group2.png" alt="">
+        <h4 class="powered-heading">Powered by Technology. Driven by Knowledge.</h4>
+        <p class="mb-5">
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+          industry's
+          standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
+          to
+          make a type specimen book.
+        </p>
+        <div class="d-sm-block">
+          <button class="btn btn-primary d-inline-flex gap-2 align-items-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path
+                d="M15.586 12.5283C14.4987 11.5982 13.3951 11.0349 12.3211 11.9635L11.6797 12.5248C11.2105 12.9322 10.3381 14.8358 6.9649 10.9555C3.59244 7.08008 5.59934 6.47668 6.06927 6.07277L6.71412 5.51081C7.78255 4.58007 7.37934 3.40838 6.60875 2.20228L6.14373 1.47173C5.36964 0.268437 4.5267 -0.521817 3.45546 0.407522L2.87665 0.913285C2.4032 1.25819 1.07978 2.37929 0.758765 4.50912C0.372419 7.06463 1.59117 9.99102 4.3834 13.2019C7.17212 16.4142 9.90253 18.0277 12.4889 17.9996C14.6384 17.9765 15.9366 16.823 16.3426 16.4037L16.9235 15.8972C17.9919 14.9686 17.3281 14.0231 16.24 13.0909L15.586 12.5283Z"
+                fill="white" />
+            </svg>
+            +1 885 696 7443
+          </button>
+          <button class="btn secondary d-inline-flex align-items-center gap-2">
+            Read More
+            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12" fill="none">
+              <path
+                d="M0.702242 11.7628C0.544139 11.6047 0.465088 11.4175 0.465088 11.2013C0.465088 10.985 0.544139 10.798 0.702242 10.6403L5.33465 6.00791L0.686432 1.35968C0.538869 1.21212 0.465088 1.02767 0.465088 0.806324C0.465088 0.58498 0.544139 0.395257 0.702242 0.237154C0.860345 0.0790514 1.04754 0 1.26382 0C1.48011 0 1.66709 0.0790514 1.82477 0.237154L7.13703 5.56522C7.20027 5.62846 7.24517 5.69697 7.27173 5.77075C7.29829 5.84453 7.31136 5.92358 7.31094 6.00791C7.31094 6.09223 7.29766 6.17128 7.2711 6.24506C7.24453 6.31884 7.19984 6.38735 7.13703 6.45059L1.80896 11.7787C1.6614 11.9262 1.47948 12 1.26319 12C1.04691 12 0.859923 11.9209 0.702242 11.7628Z"
+                fill="#006CD2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--Footer-->
+  <footer class="custom-footer-bg position-relative z-1">
+    <img src="./Images/footer-white-box.png" class="position-absolute bottom-0 start-0 z-n1" alt="">
+    <div class="container py-70">
+      <div class="row">
+        <div class="col-md-4 col-lg-2 mb-4">
+          <h5 class="font-weight-bold footer-heading">About Origen</h5>
+          <ul class="list-unstyled mb-0 footerul">
+            <li><a href="#!" class="text-dark">About Us</a></li>
+            <li><a href="#!" class="text-dark">Blog</a></li>
+            <li><a href="#!" class="text-dark">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-lg-2 mb-4">
+          <h5 class="font-weight-bold footer-heading">Our Services</h5>
+          <ul class="list-unstyled mb-0 footerul">
+            <li><a href="#!" class="text-dark">Data Storage</a></li>
+            <li><a href="#!" class="text-dark">Hosted VoIP PBX</a></li>
+            <li><a href="#!" class="text-dark">EndPoint Devices</a></li>
+            <li><a href="#!" class="text-dark">Business Internet</a></li>
+            <li><a href="#!" class="text-dark">Networking</a></li>
+            <li><a href="#!" class="text-dark">Compute</a></li>
+          </ul>
+        </div>
+
+        <!-- Add other columns here -->
+
+        <div class="col-md-4 col-lg-2 mb-4">
+          <h5 class="font-weight-bold footer-heading">Help Centre</h5>
+          <ul class="list-unstyled mb-0 footerul">
+            <li><a href="#!" class="text-dark">Support</a></li>
+            <li><a href="#!" class="text-dark">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-lg-2 mb-4">
+          <h5 class="font-weight-bold footer-heading">Canada</h5>
+          <ul class="list-unstyled mb-0 footerul">
+            <li><a href="#!" class="text-dark">1111 Boulevard Dr:</a></li>
+            <li><a href="#!" class="text-dark">Frederik - philips #605</a></li>
+            <li><a href="#!" class="text-dark">Montreal, QC H4M 2x6</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-lg-2 mb-4">
+          <h5 class="font-weight-bold footer-heading">USA</h5>
+          <ul class="list-unstyled mb-0 footerul">
+            <li><a href="#!" class="text-dark">99 Wall Street #401</a></li>
+            <li><a href="#!" class="text-dark">New York City, NY</a></li>
+            <li><a href="#!" class="text-dark">10005</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 col-lg-2 mb-4">
+          <h5 class="font-weight-bold footer-heading">Qatar</h5>
+          <ul class="list-unstyled mb-0 footerul">
+            <li><a href="#!" class="text-dark">1 Al Corniche St</a></li>
+            <li><a href="#!" class="text-dark">Burj Doha, Level 21</a></li>
+            <li><a href="#!" class="text-dark">Doha</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div
+        class="d-flex footer-section flex-column flex-lg-row justify-content-between align-items-center pb-4 pb-lg-3">
+        <div class="d-inline-flex gap-4 flex-wrap justify-content-center">
+          <a href="#">
+            <img src="./Images/Mask group2.png" alt="">
+          </a>
+          <a href="" class="d-flex align-items-center gap-2"></a>
+        </div>
+
+        <div class="d-inline-flex gap-4 align-items-center mb-4 mb-lg-0 flex-wrap justify-content-center">
+          <div class="d-inline-flex mt-5 footer-btn mt-lg-0 align-items-center social-icons gap-2 btn-white">
+            <button id="btn1" class="btn bg-white">
+
+
+              <a href=""><img src="./Images/facbook.png" class="mx-2 btn-border btn-icon" /></a>
+
+
+              <a href=""><img src="./Images/instagram.png" class="mx-2 btn-border btn-icon" /></a>
+
+              <a href=""><img src="./Images/twitter.png" class="mx-2 btn-border btn-icon" /></a>
+
+
+
+
+              <a href=""><img src="./Images/linkdin.png" class="mx-2 btn-icon " /></a>
+              </a>
+            </button>
+
+            <div class="btn-group">
+              <button id="btn1"
+                class="btn align-items-center border-0 bg-white dropdown-toggle show justify-content-between mr-lg-3 dropdown-toggle"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <a href="#" class="btn-icon">
+                  <img class="btn-border" src="./Images/earth.png" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
+                    <path
+                      d="M11.9169 0.814058C11.7588 0.655956 11.5716 0.576904 11.3553 0.576904C11.139 0.576904 10.9521 0.655956 10.7944 0.814058L6.16196 5.44647L1.51374 0.798248C1.36617 0.650686 1.18172 0.576904 0.960377 0.576904C0.739033 0.576904 0.54931 0.655956 0.391207 0.814058C0.233104 0.972161 0.154053 1.15935 0.154053 1.37564C0.154053 1.59192 0.233104 1.77891 0.391207 1.93659L5.71927 7.24884C5.78251 7.31208 5.85102 7.35698 5.9248 7.38354C5.99858 7.41011 6.07764 7.42318 6.16196 7.42275C6.24628 7.42275 6.32533 7.40947 6.39911 7.38291C6.47289 7.35635 6.5414 7.31166 6.60465 7.24884L11.9327 1.92078C12.0803 1.77321 12.1541 1.59129 12.1541 1.37501C12.1541 1.15872 12.075 0.97174 11.9169 0.814058Z"
+                      fill="#006CD2" />
+                  </svg>
+                </a>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" data-lang="fr"><img src="path-to-french-flag.png"
+                      alt="">Français</a></li>
+                <li><a class="dropdown-item" href="#" data-lang="en"><img src="path-to-english-flag.png"
+                      alt="">English</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="d-flex align-items-center justify-content-between flex-column flex-lg-row pt-3">
+        <ul
+          class="d-inline-flex flex-column gap-5 flex-sm-row align-items-center list-unstyled mb-0 footer-links pb-4 pb-lg-0">
+          <li>
+            <a href="">Sitemap </a>
+
+          </li>
+
+          <li>
+            <a href="">Terms & Conditions </a>
+
+          </li>
+
+          <li>
+            <a href=""> Privacy Policy</a>
+
+          </li>
+        </ul>
+        <p class="fs-16 text-grey text-center">
+          "Copyright © 2019 Origen, all rights reserved"
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+ 
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="main.js">
     
+
+
+
+  </script>
+  <!-- <script src="index.js"></script> -->
+  <!-- Add this in your HTML head section -->
+
+
+
 </body>
+
 </html>
